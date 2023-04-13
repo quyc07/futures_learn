@@ -9,6 +9,7 @@ use futures::future::BoxFuture;
 use futures::FutureExt;
 use futures::task::ArcWake;
 
+// 用于异步休眠的Future
 pub struct TimeFuture {
     shared_state: Arc<Mutex<SharedState>>,
 }
